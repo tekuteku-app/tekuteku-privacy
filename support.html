@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>てくてく サポート</title>
+  <style>
+    :root { --bg:#F5F7FB; --card:#FFFFFF; --accent:#004DB8; --text:#1B1F27; --sub:#4A5160; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#0E1117; --card:#1A1F29; --accent:#8CBFFF; --text:#F1F3F7; --sub:#B8BFCC; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+      font-size:19px; line-height:1.9; -webkit-font-smoothing:antialiased;
+    }
+    .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+    header { text-align:center; padding:16px 0 8px; }
+    header img { width:96px; height:96px; border-radius:22px; }
+    h1 { font-size:28px; margin:12px 0 4px; }
+    .lead { color:var(--sub); margin:0; }
+    .card { background:var(--card); border-radius:16px; padding:20px 22px; margin:18px 0; }
+    h2 { font-size:21px; margin:4px 0 12px; color:var(--accent); }
+    .faq { margin:16px 0; }
+    .q { font-weight:700; margin:0 0 4px; }
+    .a { margin:0; color:var(--sub); }
+    a { color:var(--accent); }
+    .contact a { font-weight:700; font-size:20px; }
+    footer { text-align:center; color:var(--sub); font-size:15px; margin-top:28px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>てくてく サポート</h1>
+      <p class="lead">文字が大きく、かんたんな歩数計「てくてく」のサポートページです。</p>
+    </header>
+
+    <div class="card contact">
+      <h2>お問い合わせ</h2>
+      <p>ご質問・不具合のご報告は、以下のメールアドレスまでお気軽にご連絡ください。数日以内にお返事いたします。</p>
+      <p><a href="mailto:j61382584@gmail.com?subject=%E3%81%A6%E3%81%8F%E3%81%A6%E3%81%8F%20%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">j61382584@gmail.com</a></p>
+      <p style="color:var(--sub);font-size:16px;">不具合のご報告のときは、お使いの iPhone の機種・iOS のバージョン・どの操作で起きたかを書き添えていただけると助かります。</p>
+    </div>
+
+    <div class="card">
+      <h2>よくある質問</h2>
+      <div class="faq">
+        <p class="q">歩数が表示されません。</p>
+        <p class="a">iPhone の「設定」→「プライバシーとセキュリティ」→「モーションとフィットネス」で、「てくてく」がオンになっているかご確認ください。</p>
+      </div>
+      <div class="faq">
+        <p class="q">「ヘルスケア」アプリの歩数と少し違います。</p>
+        <p class="a">てくてくは iPhone 本体の歩数を表示しています。Apple Watch など、ほかの機器で数えた歩数は含まれないため、少し違うことがあります。</p>
+      </div>
+      <div class="faq">
+        <p class="q">歩いた道が記録されません。</p>
+        <p class="a">「きょう」の画面で「さんぽを はじめる」を押してから歩いてください。位置情報は「設定」→「てくてく」→「位置情報」で「このAppの使用中」にしてください。</p>
+      </div>
+      <div class="faq">
+        <p class="q">「さんぽを おわる」を押し忘れました。</p>
+        <p class="a">15分ほど動きがないと、自動で記録をおわります。最後に動いたところまでの記録が残ります。また、記録を始めて4時間たったときも自動でおわります。</p>
+      </div>
+      <div class="faq">
+        <p class="q">電池の減りが気になります。</p>
+        <p class="a">さんぽの記録中だけ位置情報を使います。記録していないときは、歩数を数えるだけなので電池はほとんど使いません。</p>
+      </div>
+      <div class="faq">
+        <p class="q">文字をもっと大きくしたいです。</p>
+        <p class="a">iPhone の「設定」→「画面表示と明るさ」→「テキストサイズを変更」で大きくすると、てくてくの文字も大きくなります。</p>
+      </div>
+      <div class="faq">
+        <p class="q">記録はどこに保存されますか？</p>
+        <p class="a">お使いの iPhone の中だけです。外部には送りません。アプリを削除すると、さんぽの記録も消えます。</p>
+      </div>
+    </div>
+
+    <footer>
+      <p><a href="./">プライバシーポリシー</a></p>
+    </footer>
+  </div>
+</body>
+</html>
